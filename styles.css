@@ -1,0 +1,71 @@
+/* (*) = wild card selector or hits the entire site
+the range of color is from 0 - 255, how trasparent the color is 0 - 100%
+can only use hexadecimal or rgb values 
+only pick one type of color format and use that one
+i am using hexadecimal
+
+/*i have this quoted out since it was messing with my page but its the wild card */
+/*{
+    color: #c0d2f5;
+}
+
+/* this is a type selector color for the body */
+body {
+    background-color: #1a1919;
+}
+
+/* this is a type selector - color for the quotes */
+q {
+    color: #2a70fa;
+}
+
+/* font and modifiers for the h2 */
+h2 {
+    color: #c0d2f5;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+/* ID selector */
+#ender_pro {
+    color: #2ab1fa;
+}
+
+/* Relational Selector */
+section#Projects>ol {
+    color: #6b2afa;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Class selector */
+.intro_header{
+    color: #2a2efa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Combination selectors */
+p, ul {
+    color: #c0d2f5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Pseudo Class */
+section#Aspects_of_printing a:hover {
+    font-size: 1.5em;
+    color: #2ab1fa;
+}
+
+/* notes for selectors
+
+    Used ID selectors
+        #ender_pro
+        #Projects
+        #Aspects_of_printing
+
+    Class selectors
+        .intro_header
+
+*/
