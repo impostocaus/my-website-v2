@@ -5,8 +5,29 @@ only pick one type of color format and use that one
 i am using hexadecimal
 
 /*i have this quoted out since it was messing with my page but its the wild card */
-/*{
+* {
     color: #c0d2f5;
+}
+
+/* this is the nav menu section*/
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #1a1919;
+    text-align: center;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    color: #2a2efa;
+    text-align: center;
+    padding: 1em 1em;
+}
+
+.nav-menu li a:hover {
+    background-color: #c0d2f5;
 }
 
 /* this is a type selector color for the body */
@@ -19,15 +40,96 @@ q {
     color: #2a70fa;
 }
 
-/* font and modifiers for the h2 */
-h2 {
+/* font and modifiers for the h1 */
+h1 {
     color: #c0d2f5;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 2em;
     line-height: 2em;
     text-align: center;
 }
+
+/* font and modifiers for the h2 */
+h2 {
+    color: #c0d2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+}
+
+/* font and modifiers for the h1 */
+h3 {
+    color: #c0d2f5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 2em;
+    text-align: center;
+}
+
+/* 2 column fixed */
+
+br {
+    clear: left;
+}
+
+#how_prining_works {
+    float: left;
+    width: 450px;
+}
+
+#what_is_3d_printing {
+    float: right;
+    width: 450px;
+}
+
+
+/* boxes att */
+
+body {
+    background-image: radial-gradient(closest-side, #2a2efa 25%, #6b2afa 50%, #000000 100%);
+
+}
+
+.box {
+
+    width: 10%;
+    height: 5%;
+    text-align: center;
+    margin: 2em 1em;
+    border: thick outset #c0d2f5;
+    border-radius: .5em;
+    padding: 1em 2em;
+
+
+}
+
+#blue {
+    background-color: #2a2efa;
+    background: linear-gradient(120deg, #2ab1fa 0%, #2a2efa 50%, #000000 100%);
+
+}
+
+#purple {
+    background-color: #6b2afa;
+    background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
+
+}
+
+#name {
+    background-color: #6b2afa;
+    background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
+}
+
+#date {
+    background-color: #6b2afa;
+    background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
+}
+
+
 
 /* ID selector */
 #ender_pro {
@@ -39,15 +141,17 @@ section#Projects>ol {
     color: #6b2afa;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 /* Class selector */
-.intro_header{
+.intro_header {
     color: #2a2efa;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /* Combination selectors */
-p, ul {
+p,
+ul {
     color: #c0d2f5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -58,14 +162,36 @@ section#Aspects_of_printing a:hover {
     color: #2ab1fa;
 }
 
+/* footer */
+#footer {
+    clear: both;
+    text-align: right;
+}
+
 /* notes for selectors
 
     Used ID selectors
         #ender_pro
         #Projects
         #Aspects_of_printing
+        #blue
+        #purple
+        #footer
+        #how_prining_works
+        #what_is_3d_printing
+        #menu
 
     Class selectors
         .intro_header
+
+    Colors used
+        #c0d2f5
+        #2ab1fa
+        #2a2efa
+        #2ab1fa
+        #2a70fa
+        #6b2afa
+        #000000
+        #ffffff
 
 */
