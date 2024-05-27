@@ -8,7 +8,15 @@ i am using hexadecimal
 * {
     color: #c0d2f5;
 }
+/* background */
+html {
+    min-height: 100%;
+}
+body {
+    background-image: radial-gradient(closest-side, #2a2efa 25%, #6b2afa 50%, #000000 100%);
+    background-repeat: no-repeat;
 
+}
 /* this is the nav menu section*/
 .nav-menu {
     list-style: none;
@@ -89,10 +97,6 @@ br {
 
 /* boxes att */
 
-body {
-    background-image: radial-gradient(closest-side, #2a2efa 25%, #6b2afa 50%, #000000 100%);
-
-}
 
 .box {
 
