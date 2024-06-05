@@ -5,33 +5,73 @@ only pick one type of color format and use that one
 i am using hexadecimal
 
 /*i have this quoted out since it was messing with my page but its the wild card */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
 * {
     color: #c0d2f5;
 }
+
 /* background */
 html {
     min-height: 100%;
 }
+
+header h1 {
+    color: #c0d2f5;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+header h2, header h3 {
+    color: #c0d2f5;
+}
+
+main p, main q {
+    color: #c0d2f5;
+    margin: 20px 0;
+}
+
 body {
     background-image: radial-gradient(closest-side, #2a2efa 25%, #6b2afa 50%, #000000 100%);
     background-repeat: no-repeat;
-
+    background-color: #1a1919;
+    margin: 0;
+    padding: 0;
+    color: #c0d2f5;
+    font-family: Arial, Helvetica, sans-serif;
 }
+main {
+    padding: 20px;
+}
+
+header, main, footer {
+    padding: 20px;
+    text-align: center;
+}
+
 /* this is the nav menu section*/
 .nav-menu {
     list-style: none;
-    margin: 0;
+    padding: 0;
     margin: 0;
     overflow: hidden;
     background-color: #1a1919;
     text-align: center;
 }
 
+.nav-menu li {
+    display: inline;
+}
+
 .nav-menu li a {
     display: inline-block;
     color: #2a2efa;
     text-align: center;
-    padding: 1em 1em;
+    padding: 1em;
+    text-decoration: none;
 }
 
 .nav-menu li a:hover {
@@ -44,39 +84,32 @@ body {
 }
 
 /* this is a type selector - color for the quotes */
-q {
-    color: #2a70fa;
-}
-
-/* font and modifiers for the h1 */
-h1 {
-    color: #c0d2f5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 2em;
-    line-height: 2em;
-    text-align: center;
-}
-
-/* font and modifiers for the h2 */
-h2 {
-    color: #c0d2f5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 1.5em;
-    line-height: 2em;
-    text-align: center;
-}
-
-/* font and modifiers for the h1 */
-h3 {
-    color: #c0d2f5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 2em;
-    text-align: center;
-}
+        /* Type selectors */
+        q {
+            color: #2a70fa;
+        }
+        h1, h2, h3 {
+            color: #c0d2f5;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            line-height: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            line-height: 2em;
+        }
+        h3 {
+            font-size: 1em;
+            line-height: 2em;
+        }
+        p, ul {
+            color: #c0d2f5;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
 
 /* 2 column fixed */
 
@@ -84,16 +117,20 @@ br {
     clear: left;
 }
 
-#how_prining_works {
-    float: left;
-    width: 450px;
+#how_printing_works, #what_is_3d_printing {
+    width: 100%;
+    float: none;
 }
-
-#what_is_3d_printing {
-    float: right;
-    width: 450px;
+@media (min-width: 600px) {
+    #how_printing_works {
+        float: left;
+        width: 45%;
+    }
+    #what_is_3d_printing {
+        float: right;
+        width: 45%;
+    }
 }
-
 
 /* boxes att */
 
@@ -107,29 +144,74 @@ br {
     border: thick outset #c0d2f5;
     border-radius: .5em;
     padding: 1em 2em;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+ /* Media queries */
+ @media (min-width: 600px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 768px) {
+    .content div {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 600px) {
+    header, main, footer {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-menu li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .nav-menu li:last-child {
+        margin-right: 0;
+    }
+
+    ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    ol li {
+        width: 30%;
+        margin: 1%;
+    }
+}
+
+.scalable-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+section img {
+    width: 45%;
+    margin: 1%;
+}
+
+
+ol img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+/* Gradient backgrounds */
 #blue {
-    background-color: #2a2efa;
     background: linear-gradient(120deg, #2ab1fa 0%, #2a2efa 50%, #000000 100%);
-
 }
-
-#purple {
-    background-color: #6b2afa;
-    background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
-
-}
-
-#name {
-    background-color: #6b2afa;
-    background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
-}
-
-#date {
-    background-color: #6b2afa;
+#purple, #name, #date {
     background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
 }
 
@@ -154,8 +236,7 @@ section#Projects>ol {
 
 
 /* Combination selectors */
-p,
-ul {
+p,ul {
     color: #c0d2f5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This website is a project about 3D printing for CIS 155 That is going to be a demo for HTML and CSS" />
-        <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="This website is a project about 3D printing for CIS 155 that is going to be a demo for HTML and CSS">
+    <link rel="stylesheet" href="styles.css">
     <title>CIS 155: My 3D Printer</title>
 </head>
+
 <body>
-<header>
-    <section id="Projects">
-        <h2> Projects </h2>
+    <header>
+        <h1>CIS 155: My 3D Printer</h1>
         <nav class="menu">
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Aspects.html">Aspects of printing</a></li>
                 <li><a href="Build.html">Build</a></li>
-                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="#Projects">Projects</a></li>
             </ul>
         </nav>
-            <ol>
-                <li> MTG PLA purple box </li>
-                <img src="/images/3D printer/ender 3 pro purple deck box.jpg" alt="MTG purple deck box" width="300em">
-                <li> MTG TPU glow in dark case </li>
-                <img src="/images/3D printer/Fin TPU MTG box.jpg" alt="Fininshed TPU MTG box" width="300em">
-                <img src="/images/3D printer/ender 3 pro glow in dark case.jpg" alt=" MTG glow in dark case" width="300em">
-                <li> PLA Topo map </li>
-                <img src="/images/3D printer/ender 3 pro topo map purple.jpg" alt="PLA topo map purple" width="300em" height="400em">
-                <img src="/images/3D printer/Fintopomap.jpg" alt="Fininshed PLA Topo map" width="300em">
+    </header>
 
-            </ol>
-    </section>
+    <main>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>MTG PLA purple box</li>
+                <img src="/images/3D printer/ender 3 pro purple deck box.jpg" alt="MTG purple deck box" title="MTG purple deck box" class="scalable-image">
+                <li>MTG TPU glow in dark case</li>
+                <img src="/images/3D printer/Fin TPU MTG box.jpg" alt="Finished TPU MTG box" title="Finished TPU MTG box" class="scalable-image">
+                <img src="/images/3D printer/ender 3 pro glow in dark case.jpg" alt="MTG glow in dark case" title="MTG glow in dark case" class="scalable-image">
+                <li>PLA Topo map</li>
+                <img src="/images/3D printer/ender 3 pro topo map purple.jpg" alt="PLA topo map purple" title="PLA topo map purple" class="scalable-image">
+                <img src="/images/3D printer/Fintopomap.jpg" alt="Finished PLA Topo map" title="Finished PLA Topo map" class="scalable-image">
+            </ul>
+        </section>
+
+        <section id="Aspects.html">
+            <h2>Aspects of printing</h2>
+            <p>3D printing, also known as additive manufacturing, is a process of creating three-dimensional objects from a digital file. This technology builds objects layer by layer, which allows for complex shapes and structures that would be difficult or impossible to achieve with traditional manufacturing methods.</p>
+            <p>This is a standard version of my Creality Ender 3 Pro. More info can be found <a href="https://www.creality.com/products/ender-3-pro-3d-printer" target="_blank">here</a>.</p>
+            <ul>
+                <li>Type of printer</li>
+                <li>Types of materials</li>
+                <li>Mods</li>
+                <li>Tools</li>
+                <li>Programs</li>
+                <li>Common problems</li>
+            </ul>
+        </section>
+    </main>
+
     <footer id="footer">
-        <a href="#">run it back</a>
-        <p>&copy; Max Malocha 2024 </p>
+        <a href="#">Back to top</a>
+        <p>&copy; Max Malocha 2024</p>
     </footer>
-</header>
 </body>
+
 </html>
