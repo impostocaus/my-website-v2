@@ -74,6 +74,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-size: 125%; /* Increase the font size by 25% */
 }
 
 .nav-menu li {
@@ -81,14 +82,18 @@ footer a:hover {
 }
 
 .nav-menu li a {
+    display: block; /* Ensure the links are block elements */
     color: #2a2efa;
     text-align: center;
-    padding: 1em;
+    padding: 1.25em; /* Increase padding to make buttons larger */
     text-decoration: none;
+    background-color: #333333; /* Box background color for buttons */
+    border-radius: 0.5em; /* Optional for rounded corners */
 }
 
 .nav-menu li a:hover {
     background-color: #c0d2f5;
+    color: #000000; /* Change text color on hover for contrast */
 }
 
 /* Box Styles */
