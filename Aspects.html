@@ -5,65 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This website is a project about 3D printing for CIS 155 that is going to be a demo for HTML and CSS">
+    <meta name="description"
+        content="This website is a project about 3D printing for CIS 155. It is a demo for HTML and CSS">
     <link rel="stylesheet" href="styles.css">
-    <title>CIS 155: My 3D Printer</title>
+    <title>CIS 155: Aspects of 3D Printing</title>
 </head>
 
 <body>
     <header>
-        <h1>CIS 155: My 3D Printer</h1>
         <nav class="menu">
-            <ul class="nav-menu">
+            <ul class="nav-menu flex-container">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#aspects">Aspects of printing</a></li>
-                <li><a href="Build.html">Build</a></li>
-                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="aspects.html">Aspects of printing</a></li>
+                <li><a href="build.html">Build</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="content-container">
         <section id="aspects">
-            <h2>Aspects of printing</h2>
-            <p>3D printing, also known as additive manufacturing, is a process of creating three-dimensional objects from a digital file. This technology builds objects layer by layer, which allows for complex shapes and structures that would be difficult or impossible to achieve with traditional manufacturing methods.</p>
-            <p>This is a standard version of my Creality Ender 3 Pro. More info can be found <a href="https://www.creality.com/products/ender-3-pro-3d-printer" target="_blank">here</a>.</p>
+            <h2>Aspects of 3D Printing</h2>
+            <p>3D printing, also known as additive manufacturing, is a process of creating three-dimensional objects
+                from a digital file. This technology builds objects layer by layer, which allows for complex shapes and
+                structures that would be difficult or impossible to achieve with traditional manufacturing methods.</p>
+            <p>This is a standard version of my Creality Ender 3 Pro. More info can be found <a
+                    href="https://www.creality.com/products/ender-3-pro-3d-printer" target="_blank">here</a>.</p>
             <ul>
-                <li>Type of printer</li>
-                <li>Types of materials</li>
-                <li>Mods</li>
-                <li>Tools</li>
-                <li>Programs</li>
-                <li>Common problems</li>
+                <li><strong>Type of printer</strong></li>
+                <ul>
+                    <li>SLA: Stereolithography</li>
+                    <li>DLP: Digital Light Processing</li>
+                    <li>FDM: Fused Deposition Modeling</li>
+                </ul>
+                <li><strong>Types of materials</strong></li>
+                <ul>
+                    <li>PLA: Polylactic Acid</li>
+                    <li>ABS: Acrylonitrile Butadiene Styrene</li>
+                    <li>TPU: Thermoplastic Polyurethane</li>
+                </ul>
+                <img src="/images/3D printer/slicing.jpg" alt="shows the layer lines in a slicing software"
+                    title="layer lines in a slicing software" class="scalable-image">
             </ul>
-        </section>
-
-        <section id="what_is_3d_printing">
-            <h2>What is 3D printing</h2>
-            <p>3D printing, also known as additive manufacturing, is a process of creating three-dimensional objects from a digital file. This technology builds objects layer by layer, which allows for complex shapes and structures that would be difficult or impossible to achieve with traditional manufacturing methods.</p>
-            <ul>
-                <li>Design Creation</li>
-                <li>Slicing</li>
-                <li>Printing</li>
-            </ul>
-        </section>
-
-        <section id="how_prining_works">
-            <h2>How printing works</h2>
-            <h3>Design Creation:</h3>
-            <p>The process begins with a digital 3D model created using Computer-Aided Design (CAD) software. Alternatively, a 3D scanner can be used to digitize an existing object. The 3D model is then converted into a format that the 3D printer can understand, typically an STL (Stereolithography) file.</p>
-
-            <h3>Slicing:</h3>
-            <p>The STL file is processed by slicing software, which divides the 3D model into thin horizontal layers. This slicing software generates a G-code file, which contains instructions for the printer, such as movement paths, speed, and material extrusion.</p>
-            <img src="/images/3D printer/slicing.jpg" alt="example of slicing" title="example of slicing" width="300em">
-
-            <h3>Printing:</h3>
-            <p>The 3D printer reads the G-code file and starts building the object layer by layer. The printer deposits material (such as plastic, metal, or resin) according to the instructions, gradually creating the 3D object. There are various 3D printing technologies, each using different methods and materials to create objects.</p>
-            <img src="/images/3D printer/ender 3 pro layer lines dice container.jpg" alt="layer lines dice container" title="layer lines dice container" width="300em">
         </section>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="content-container">
+        <h2>References</h2>
+        <p>OpenAI. (2023). ChatGPT (Apr 29, 2024 version) [Large language model]. <a href="https://chat.openai.com/chat"
+                target="_blank">https://chat.openai.com/chat</a></p>
         <a href="#">Back to top</a>
         <p>&copy; Max Malocha 2024</p>
     </footer>

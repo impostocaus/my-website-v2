@@ -5,27 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This website is a project about 3D printing for CIS 155 that is going to be a demo for HTML and CSS">
+    <meta name="description" content="This website is a project about 3D printing for CIS 155. It is a demo for HTML and CSS">
     <link rel="stylesheet" href="styles.css">
-    <title>CIS 155: My 3D Printer</title>
+    <title>CIS 155: 3D Printing Projects</title>
 </head>
 
 <body>
     <header>
-        <h1>CIS 155: My 3D Printer</h1>
         <nav class="menu">
-            <ul class="nav-menu">
+            <ul class="nav-menu flex-container">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Aspects.html">Aspects of printing</a></li>
-                <li><a href="Build.html">Build</a></li>
-                <li><a href="#Projects">Projects</a></li>
+                <li><a href="aspects.html">Aspects of printing</a></li>
+                <li><a href="build.html">Build</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="content-container">
         <section id="Projects">
-            <h2>Projects</h2>
+            <h2>3D Printing Projects</h2>
             <ul>
                 <li>MTG PLA purple box</li>
                 <img src="/images/3D printer/ender 3 pro purple deck box.jpg" alt="MTG purple deck box" title="MTG purple deck box" class="scalable-image">
@@ -37,23 +36,11 @@
                 <img src="/images/3D printer/Fintopomap.jpg" alt="Finished PLA Topo map" title="Finished PLA Topo map" class="scalable-image">
             </ul>
         </section>
-
-        <section id="Aspects.html">
-            <h2>Aspects of printing</h2>
-            <p>3D printing, also known as additive manufacturing, is a process of creating three-dimensional objects from a digital file. This technology builds objects layer by layer, which allows for complex shapes and structures that would be difficult or impossible to achieve with traditional manufacturing methods.</p>
-            <p>This is a standard version of my Creality Ender 3 Pro. More info can be found <a href="https://www.creality.com/products/ender-3-pro-3d-printer" target="_blank">here</a>.</p>
-            <ul>
-                <li>Type of printer</li>
-                <li>Types of materials</li>
-                <li>Mods</li>
-                <li>Tools</li>
-                <li>Programs</li>
-                <li>Common problems</li>
-            </ul>
-        </section>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="content-container">
+        <h2>References</h2>
+        <p>OpenAI. (2023). ChatGPT (Apr 29, 2024 version) [Large language model]. <a href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com/chat</a></p>
         <a href="#">Back to top</a>
         <p>&copy; Max Malocha 2024</p>
     </footer>

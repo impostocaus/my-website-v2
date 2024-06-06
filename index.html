@@ -12,38 +12,42 @@
 
 <body>
     <header>
-        <div id="purple" class="box">
-            <h1 class="intro_header"><strong>My 3D Printer</strong></h1>
+        <div id="header-container" class="content-container flex-container">
+            <div id="purple" class="box">
+                <h1 class="intro_header"><strong>My 3D Printer</strong></h1>
+            </div>
+            <div id="name" class="box">
+                <h2 class="intro_header">Student: Max M.</h2>
+            </div>
+            <div id="blue" class="box">
+                <img src="/images/profile/profile.png" alt="profile image of Max M" title="image of Max M.">
+            </div>
+            <div id="date" class="box">
+                <h3 class="intro_header">Date: 2/22/2024</h3>
+            </div>
         </div>
         <nav class="menu">
-            <ul class="nav-menu">
+            <ul class="nav-menu flex-container">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Aspects.html">Aspects of printing</a></li>
-                <li><a href="Build.html">Build</a></li>
-                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="aspects.html">Aspects of printing</a></li>
+                <li><a href="build.html">Build</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </ul>
         </nav>
-        <div id="name" class="box">
-            <h2 class="intro_header">Student: Max M.</h2>
-        </div>
-        <div id="blue" class="box">
-            <img src="/images/profile/profile.png" alt="profile image of Max M" title="image of Max M.">
-        </div>
-        <div id="date" class="box">
-            <h3 class="intro_header">Date: 2/22/2024</h3>
-        </div>
         <h4>Exploring my 3D printer</h4>
     </header>
 
-    <main>
-        <p>This section is for an explanation of what printing is <em>it's not all fun and games</em></p>
-        <img src="/images/3D printer/ender 3 pro printing.jpg" alt="A picture of an Ender 3 pro printing" title="Ender 3 pro printing" class="scalable-image">
-        <p><q>A 3D printer is a trials and tribulations device</q></p>
-        <article></article>
+    <main class="content-container grid-container">
+        <section>
+            <p>This section is for an explanation of what printing is <em>it's not all fun and games</em></p>
+            <img src="/images/3D printer/ender 3 pro printing.jpg" alt="A picture of an Ender 3 pro printing" title="Ender 3 pro printing" class="scalable-image">
+            <p><q>A 3D printer is a trials and tribulations device</q></p>
+        </section>
+        <article>Article content here...</article>
         <aside>Extra info that is on the side</aside>
     </main>
 
-    <footer id="footer">
+    <footer id="footer" class="content-container">
         <h2>References</h2>
         <p>OpenAI. (2023). ChatGPT (Apr 29, 2024 version) [Large language model]. <a href="https://chat.openai.com/chat" target="_blank">https://chat.openai.com/chat</a></p>
         <a href="#">Back to top</a>
