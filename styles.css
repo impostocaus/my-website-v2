@@ -24,8 +24,8 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Optional for visual separation */
-    border-radius: 10px; /* Optional for visual appeal */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
 }
 
 /* Header, Main, and Footer */
@@ -74,7 +74,7 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 125%; /* Increase the font size by 25% */
+    font-size: 125%;
 }
 
 .nav-menu li {
@@ -82,18 +82,18 @@ footer a:hover {
 }
 
 .nav-menu li a {
-    display: block; /* Ensure the links are block elements */
-    color: #2a2efa;
+    display: block;
+    color: #c0d2f5;
     text-align: center;
-    padding: 1.25em; /* Increase padding to make buttons larger */
+    padding: 1.25em;
     text-decoration: none;
-    background-color: #333333; /* Box background color for buttons */
-    border-radius: 0.5em; /* Optional for rounded corners */
+    background-color: #333333;
+    border-radius: 0.5em;
 }
 
 .nav-menu li a:hover {
-    background-color: #c0d2f5;
-    color: #000000; /* Change text color on hover for contrast */
+    background-color: #2a2efa;
+    color: #000000;
 }
 
 /* Box Styles */
@@ -107,7 +107,7 @@ footer a:hover {
     text-align: center;
     flex: 1;
     min-width: 250px;
-    word-wrap: break-word; /* Ensures text wraps within the box */
+    word-wrap: break-word;
 }
 
 #purple {
@@ -121,7 +121,6 @@ footer a:hover {
 }
 
 #name, #date {
-    background-color: #6b2afa;
     background: linear-gradient(120deg, #ffffff 0%, #2ab1fa 25%, #6b2afa 75%, #000000 100%);
 }
 
@@ -140,7 +139,7 @@ footer a:hover {
 .build-list img {
     display: block;
     margin: 10px auto;
-    max-width: 90%; /* Ensures the image does not exceed the list item width */
+    max-width: 90%;
 }
 
 /* Scalable Image */
