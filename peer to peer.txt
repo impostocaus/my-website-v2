@@ -1,0 +1,5 @@
+peer to peer things to add
+bullet points remove the points
+redo my image paths for filiment and motherboard
+nav bar contrast
+orgnized my media querys to reflect the order of size
