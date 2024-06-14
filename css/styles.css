@@ -11,7 +11,7 @@ body {
     background-repeat: no-repeat;
     background-color: #1a1919;
     color: #c0d2f5;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -72,18 +72,19 @@ footer a:hover {
     background-color: #1a1919;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Prevents wrapping to new lines */
     font-size: 125%; /* Increase the font size by 25% */
 }
 
 .nav-menu li {
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .nav-menu li a {
     display: block; /* Ensure the links are block elements */
-    color: #2a2efa;
+    color: #c0d2f5;
     text-align: center;
     padding: 1.25em; /* Increase padding to make buttons larger */
     text-decoration: none;
@@ -166,6 +167,11 @@ th {
     background-color: #2a2efa;
 }
 
+/* Remove bullet points */
+.no-bullets {
+    list-style-type: none;
+}
+
 /* Flex and Grid Containers */
 .flex-container {
     display: flex;
@@ -185,12 +191,6 @@ th {
     }
 }
 
-@media (min-width: 900px) {
-    .grid-container {
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-}
-
 @media (min-width: 768px) {
     .nav-menu li {
         margin: 0 10px;
@@ -203,4 +203,19 @@ th {
     .scalable-image {
         width: 50%;
     }
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
+/* Change color for "here" links */
+a.special-link {
+    color: #ff5733; /* Change to desired color */
+}
+
+a.special-link:hover {
+    color: #ff8d1a; /* Change to desired hover color */
 }
