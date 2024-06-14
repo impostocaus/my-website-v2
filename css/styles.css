@@ -97,6 +97,22 @@ footer a:hover {
     color: #000000; /* Change text color on hover for contrast */
 }
 
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    
+    .nav-menu li {
+        margin: 5px 0;
+    }
+
+    .nav-menu li a {
+        padding: 0.75em; /* Reduce padding for smaller screens */
+        font-size: 100%; /* Adjust font size for smaller screens */
+    }
+}
+
 /* Box Styles */
 .box {
     margin: 10px;
