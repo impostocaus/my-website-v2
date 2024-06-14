@@ -37,7 +37,7 @@ header, main, footer {
 header h1 {
     color: #c0d2f5;
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 20px 0;
 }
 
 header h2, header h3 {
